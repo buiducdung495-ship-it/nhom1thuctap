@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom auxiliary helper classes */
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Print Stylesheet for UC14 (In văn bản) */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #document-review-detail-pane, #document-review-detail-pane * {
+    visibility: visible;
+  }
+  #document-review-detail-pane {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+  /* Hide the action center panel on the right side during printing */
+  #document-review-detail-pane > div:last-child {
+    display: none !important;
+  }
+  #document-review-detail-pane > div:first-child {
+    width: 100% !important;
+    border-right: none !important;
+  }
+}
+
