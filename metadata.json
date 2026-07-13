@@ -1,6 +1,0 @@
-{
-  "name": "Hệ thống Quản trị Quy trình và Phê duyệt Văn bản",
-  "description": "Hệ thống quản lý quy trình nội bộ, soạn thảo, ký số và phê duyệt văn bản trực tuyến dành cho doanh nghiệp.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
