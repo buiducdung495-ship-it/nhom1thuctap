@@ -603,6 +603,15 @@
       "details": "Đăng nhập thành công",
       "ipAddress": "127.0.0.1",
       "timestamp": "2026-07-10T18:55:26.907Z"
+    },
+    {
+      "id": "audit-1784041500284",
+      "userId": "admin-1",
+      "userName": "Kim Kim Tiểu Trương",
+      "action": "login",
+      "details": "Đăng nhập thành công",
+      "ipAddress": "127.0.0.1",
+      "timestamp": "2026-07-14T15:05:00.285Z"
     }
   ],
   "sharedCategories": [
@@ -655,5 +664,6 @@
       "uploadedAt": "2026-07-10T18:52:12.316Z"
     }
   ],
-  "chatGroups": []
+  "chatGroups": [],
+  "cloudFiles": []
 }
